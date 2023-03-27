@@ -56,8 +56,12 @@ namespace Pate_InfoTest
         }
         public virtual int CompareTo(Pate_Candidato obj)
         {
+            if (obj == null)
+                return 1;
             if (obj.punteggio() < this.punteggio())
                 return 1;
+            else if(obj.punteggio() > this.punteggio())
+                return -1;
             return 0;
         }
         public int HashCode()

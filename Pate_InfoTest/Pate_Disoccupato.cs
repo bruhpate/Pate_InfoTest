@@ -78,6 +78,8 @@ namespace Pate_InfoTest
             Pate_Disoccupato obje = obj as Pate_Disoccupato;
             if (obje.punteggio() < this.punteggio())
                 return 1;
+            else if (obj.punteggio() > this.punteggio())
+                return -1;
             return 0;
         }
     }

@@ -53,9 +53,13 @@ namespace Pate_InfoTest
         }
         public override int CompareTo(Pate_Candidato obj)
         {
-            Pate_Lavoratore obje = obj as Pate_Lavoratore;
+            if (obj == null)
+                return 1;
+            Pate_Lavoratore obje = obj as Pate_Lavoratore
             if (obje.punteggio() < this.punteggio())
                 return 1;
+            else if (obj.punteggio() > this.punteggio())
+                return -1;
             return 0;
         }
     }
