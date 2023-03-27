@@ -8,11 +8,11 @@ namespace Pate_InfoTest
 {
     public abstract class Pate_Candidato
     {
+        //inizio Task1
         private int pate_matricola;
         private string pate_nome;
         public int Pate_matricola { get { return pate_matricola; } set { pate_matricola = value; } }
         public string Pate_nome { get { return pate_nome; } set { pate_nome = value; } }
-
         public Pate_Candidato()
         {
             pate_matricola = 0;
