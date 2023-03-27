@@ -43,5 +43,26 @@ namespace Pate_InfoTest
             int ret = 0;
             return ret;
         }
+        public override string ToString()
+        {
+            return $"Matricola: {pate_matricola} Nome: {pate_nome}";
+        }
+        public virtual bool Equals(Pate_Candidato obj)
+        {
+            if (this.Pate_matricola == obj.Pate_matricola && this.Pate_nome == obj.Pate_nome)
+                return true;
+            else
+                return false;
+        }
+        public virtual int CompareTo(Pate_Candidato obj)
+        {
+            if (obj.punteggio() < this.punteggio())
+                return 1;
+            return 0;
+        }
+        public int HashCode()
+        {
+            return (pate_matricola, pate_nome).GetHashCode();
+        }
     }
 }

@@ -60,7 +60,25 @@ namespace Pate_InfoTest
                 return true;
             else
                 return false;
-
+        }
+        public override string ToString()
+        {
+            return $"Matricola: {Pate_matricola} Nome: {Pate_nome} Voto: {pate_voto} Lode: {pate_lode}";
+        }
+        public override bool Equals(Pate_Candidato obj)
+        {
+            Pate_Disoccupato obje = obj as Pate_Disoccupato;
+            if (base.Equals(obj) && this.pate_voto == obje.pate_voto && this.pate_lode == obje.pate_lode)
+                return true;
+            else
+                return false;
+        }
+        public override int CompareTo(Pate_Candidato obj)
+        {
+            Pate_Disoccupato obje = obj as Pate_Disoccupato;
+            if (obje.punteggio() < this.punteggio())
+                return 1;
+            return 0;
         }
     }
 }

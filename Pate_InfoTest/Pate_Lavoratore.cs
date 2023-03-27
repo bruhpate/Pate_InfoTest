@@ -39,5 +39,24 @@ namespace Pate_InfoTest
                 return true;
             return false;
         }
+        public override string ToString()
+        {
+            return $"Matricola: {Pate_matricola} Nome: {Pate_nome} Esperienze: {pate_esperienze}";
+        }
+        public override bool Equals(Pate_Candidato obj)
+        {
+            Pate_Lavoratore obje = obj as Pate_Lavoratore;
+            if (base.Equals(obj) && this.pate_esperienze == obje.pate_esperienze)
+                return true;
+            else
+                return false;
+        }
+        public override int CompareTo(Pate_Candidato obj)
+        {
+            Pate_Lavoratore obje = obj as Pate_Lavoratore;
+            if (obje.punteggio() < this.punteggio())
+                return 1;
+            return 0;
+        }
     }
 }
