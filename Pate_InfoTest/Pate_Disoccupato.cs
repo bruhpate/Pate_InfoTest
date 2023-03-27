@@ -48,7 +48,7 @@ namespace Pate_InfoTest
         public override int punteggio()
         { 
             int punt = (100 * (int)pate_voto) / 110;
-            if (pate_voto == 105)
+            if (punt == 100)
             {
                 punt += 5;
             }
