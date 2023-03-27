@@ -1,0 +1,6 @@
+C:\Users\patelli.19326\Desktop\Pate_InfoTest\Pate_InfoTest\obj\Debug\Pate_InfoTest.csproj.AssemblyReference.cache
+C:\Users\patelli.19326\Desktop\Pate_InfoTest\Pate_InfoTest\obj\Debug\Pate_InfoTest.csproj.SuggestedBindingRedirects.cache
+C:\Users\patelli.19326\Desktop\Pate_InfoTest\Pate_InfoTest\obj\Debug\Pate_InfoTest.Form1.resources
+C:\Users\patelli.19326\Desktop\Pate_InfoTest\Pate_InfoTest\obj\Debug\Pate_InfoTest.Properties.Resources.resources
+C:\Users\patelli.19326\Desktop\Pate_InfoTest\Pate_InfoTest\obj\Debug\Pate_InfoTest.csproj.GenerateResource.cache
+C:\Users\patelli.19326\Desktop\Pate_InfoTest\Pate_InfoTest\obj\Debug\Pate_InfoTest.csproj.CoreCompileInputs.cache

@@ -47,12 +47,12 @@ namespace Pate_InfoTest
         }
         public override int punteggio()
         { 
-            if(pate_voto == 105)
-            {
-                pate_voto += 5;
-            }
             int punt = (100 * (int)pate_voto) / 110;
-            return punt
+            if (pate_voto == 105)
+            {
+                punt += 5;
+            }
+            return punt;
         }
         public override bool isIdoneo()
         {
